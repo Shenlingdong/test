@@ -1,0 +1,292 @@
+*{
+	padding:0;
+	margin:0;
+}
+ul,li,ol{
+	list-style:none;
+}
+a{
+	text-decoration:none; 
+} 
+#header
+{
+	height:150px;
+	width:1295px; 
+	float: left;
+	margin-left: 65px;
+	background-color: #ffffff;
+	z-index: 1;
+}
+#header1
+{
+	height:35px;
+	width:1295px; 
+	float: left;
+	margin-top: 8px;	
+}
+.headerzi
+{
+	font-size: 13px;
+	color: #9a9791;
+}
+#header2
+{
+	height:90px;
+	width:1295px; 
+	float: left;
+	
+}
+.header2s
+{
+	height:20px;
+	margin-top: 6px;
+	width:58px; 
+	float: left;
+	border-right:1px solid #ebe7e7;
+}
+.header2s1
+{
+	height:21px;
+	margin-top: 8px;
+	width:76px; 
+	float: left;
+	border-right:1px solid #ebe7e7;
+}
+#zhongd
+{
+	height:595px;
+	width:1195px; 
+	float: left;
+
+	
+}
+#zhong1
+{
+	height:595px;
+	width:170px; 
+	float: left;
+}
+#zhong2
+{
+	height:595px;
+	width:808px; 
+	float: left;
+}
+.zhongs
+{
+	height:46px;
+	width:808px; 
+	float: left;
+}
+.zhongsz
+{
+	height:46px;
+	width:109px; 
+	float: left;
+	border-right:1px solid #ebe7e7;
+	margin: 0 auto;
+	text-align: center;
+}
+.zhongsz1
+{
+	height:13px;
+	width:126px;
+}
+.zhong2b
+{
+	height:361px;
+	width:808px; 
+	border-top: 2px solid #ff4d04;
+	border-bottom: 2px solid #ff4d04;
+	margin-top: 48px;
+}
+.box {
+	width: 801px;
+	height: 361px;
+	border: 1px solid red;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.slider {
+	width: 6408px;
+	position: absolute;
+	left: -801px;
+}
+
+.slide {
+	width: 801px;
+	float: left;
+}
+
+.box>span {
+	display: block;
+	width: 30px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	top: 175px;
+	line-height: 50px;
+	background: rgb(255, 0, 0);
+	font-size: 30px;
+	position: absolute;
+	/* display: none; */
+	opacity: 0;
+}
+
+#left {
+	left: 30px;
+}
+
+#right {
+	right: 30px;
+}
+
+.nav {
+	position: absolute;
+	left: 250px;
+	bottom: 20px;
+}
+
+.nav>li {
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	cursor: pointer;
+	margin: 0 10px;
+	border-radius: 50%;
+}
+
+.nav .active {
+	background: red;
+}
+.zhong2d
+{
+	height:179px;
+	width:808px; 
+	float: left;
+}
+.zhong2dx
+{
+	height:179px;
+	width:197px; 
+	float: left;
+}
+#zhong3
+{
+	height:595px;
+	width:217px; 
+	float: left;
+}
+.zhong3d
+{
+	height:46px;
+	width:219px; 
+	float: left;
+	border-bottom:1px solid #ff4d04;
+	margin: 0 auto;
+	text-align: center;
+}
+.zhong3d1
+{
+	height:46px;
+	width:219px; 
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom:1px solid #f8f7f6;
+}
+.zhong3d2
+{
+	height:320px;
+	width:219px; 
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom:2px solid #f8f7f6;
+}
+#news{
+    width:219px;
+    height:320px;
+    margin:0 auto;
+    text-align: center;
+	border-bottom:2px solid #f8f7f6;
+	overflow:hidden;/*这里必须设置哦，否则滚动会消失的，如果设置为scroll，更容易明白原理*/
+}
+#news li{
+    line-height:30px;
+}
+.zhong3d3
+{
+	height:180px;
+	width:219px; 
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+}
+.zgd
+{
+	font-size: 14px;
+	margin-top: 8px;
+
+}
+#dibu
+{
+	height:344px;
+	width:1182px; 
+	float: left;
+	margin-left: 130px;
+	background-color:#f8f7f6;
+	
+}
+.di1{
+	width: 172px;
+	height: 182px;
+	float: left;
+}
+.di2{
+	width: 1010px;
+	height: 182px;
+	float: left;
+	border-bottom:1px solid #ffffff;
+}
+.di3
+{
+	height:162px;
+	width:1182px; 
+	margin-top: 182px;
+	
+}
+#huadong
+{
+	height: 496px;
+	width: 124px;
+	float: right;
+}
+#huadong1
+{
+	overflow: hidden;
+	float: right;
+	border-top-left-radius:20px;
+}
+#huadong2
+{
+	overflow: hidden;
+	float: right;
+	background: #fe9a6c;
+}
+#huadong3
+{
+	overflow: hidden;
+	float: right;
+	background: #ff9260;
+}
+#huadong4
+{
+	overflow: hidden;
+	float: right;
+
+}

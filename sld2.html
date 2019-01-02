@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>子页</title>
+    <link rel="stylesheet" href="sld2.css" >
+    <script src="sld2.js"></script>
+</head>
+<body>
+    <div id="mengban" style="height: 100%;width: 100%; background-color:#CCC;opacity: 1;">
+    <!-- 弹出开始 -->
+    <div id="tan" style="opacity: 1;position:fixed;border:2px solid #aca9d3; left: 35%;top:35%;background-color: #ffffff;width: 400px;height: 228px;z-index: 1;display: none;">
+        <img src="img/rr11_02.jpg">
+        <div style="width: 492px;height: 114px;float: left;margin-top: 31px;">
+            <div style="width: 150px;height: 38px;float: left;margin-left: 45px;">
+                <button id="bt1" style="font-size: 18px; border:1px solid #ff0754; background-color:#ffffff;color: #ff0754;width: 150px;height: 38px;">
+                    继续购物
+                </button>
+            </div>
+            <div style="width: 150px;height: 38px;float: left;margin-left: 25px;">
+                <button id="bt2" style=" background-color:#ff0754; border:1px solid #ff0754; font-size: 18px; width: 150px;height: 38px;color: #ffffff;">
+                    去购物车结算
+                </button>
+            </div>
+        </div>
+    </div>
+    <div style="height:150px;width:1480px; ">
+     <!-- 头部开始 -->
+    <div id="header"  style="position:static;">
+        <!-- 顶部1开始 -->
+        <div id=header1 style="padding-left: 65px;">
+            <div style="float: left;">
+                <a href="" style="font-size: 13px;color: #9a9791;margin-left:65px;">帮5买，享帮帮</a>
+            </div>
+            <div style="float: left;margin-left: 380px;">
+                <a href="" style="margin-left: 12px;"><img src="img/qq.jpg"></a>
+                <a href="" style="margin-left: 12px;"><img src="img/wx.jpg"></a>
+                <a href="" style="margin-left: 12px;"><img src="img/wb.jpg"></a>
+                <a href="" style="margin-left: 12px;"class="headerzi">登录</a>
+                <a href="" style="margin-left: 15px;"class="headerzi">注册</a>
+                <a href="" style="margin-left: 15px;"class="headerzi"><img src="img/yx.jpg">消息</a>
+                <a href="" style="margin-left: 15px;"class="headerzi"><img src="img/dingdan.jpg">我的订单</a>
+                <a href="" style="margin-left: 15px;"class="headerzi">我的收藏</a>
+                <a href="" style="margin-left: 15px;"class="headerzi">帮钻兑换</a>
+                <a href="" style="margin-left: 15px;"class="headerzi"><img src="img/sj.png">手机版</a>
+                <a href="" style="margin-left: 15px;"class="headerzi">帮5淘</a>
+                <a href="" style="margin-left: 15px;"class="headerzi">客户服务</a>
+                <a href="" style="margin-left: 15px;"class="headerzi"><img src="img/gouwuche.jpg">购物车</a>
+            </div>
+        </div>
+         <!-- 顶部2开始 -->
+        <div id=header2 style="padding-left: 65px;">
+            <div style="float: left;">
+                <img src="img/logo_03.jpg" style="font-size: 13px;color: #9a9791;margin-left:65px;margin-top: 15px;">
+            </div>
+            <div style="float: left;margin-left: 110px;">
+                <div>
+                    <form style="margin-top: 30px;float: left; ">
+                        <input class="headerzi" id="1" type = "text" value = "输入商品网址或关键词，直通全网，快速帮5购！" style="width: 500px;height: 41px;border-color:#fe6c00;"/>
+                        <!-- 顶部搜索动态效果 -->
+                        <script type="text/javascript">
+                            function addListener(element,e,fn){
+                                    if(element.addEventListener){
+                                        element.addEventListener(e,fn,false);
+                                    }
+                                    else {
+                                        element.attachEvent("on" + e,fn);
+                                    }
+                            }
+                            var myip=document.getElementById("1");
+                            console.log(myip);
+                            addListener(myip,"click",function(){myip.value = "";})
+                            addListener(myip,"blur",function(){myip.value = "输入商品网址或关键词，直通全网，快速帮5购！";}) 
+                        </script>
+                    </form>
+                    <button style="margin-top: 30px;float: left; width: 84px;height: 45px;border:0px;background-color:#fe6c00;font-size: 18px;color: #ffffff;">搜全网</button>
+                </div>
+                <div style="float: left;margin-left: 19px;"><!-- 底部小字体 -->
+                    <div class="header2s"><a href=""style="color: #f5062a;font-size: 10px;">洗发护发</a></div> 
+                    <div class="header2s"><a  href="" style="color: #f5062a;font-size: 10px;">日本纸尿裤</a></div> 
+                    <div class="header2s"><a href=""style="color: #74736d;font-size: 10px;margin-left: 10px;">身体乳</a></div> 
+                    <div class="header2s"><a href=""style="color: #74736d;font-size: 10px;margin-left: 6px;">内衣文胸</a></div> 
+                   <div class="header2s"><a href=""style="color: #aca9d3;font-size: 10px;margin-left: 4px;">iPhone 6s </a></div>
+                   <div class="header2s"><a href=""style="color: #aca9d3;font-size: 10px;margin-left: 4px;">ipad Air2 </a></div> 
+                   <div class="header2s"><a href=""style="color: #74736d;font-size: 10px;margin-left: 12px;">牛仔裤 </a></div> 
+                   <div class="header2s"><a href=""style="color: #74736d;font-size: 10px;margin-left: 14px;">奶粉 </a></div> 
+                   <div class="header2s"><a href=""style="color: #74736d;font-size: 10px;margin-left: 10px;">防晒霜 </a></div> 
+                   <div class="header2s" style="border-right:0px"><a href=""style="color: #74736d;font-size: 10px;margin-left: 16px;">伞</a></div>  
+                </div>
+            </div>
+            <div  style="width:87px;height: 41px; float: left;margin-left: 110px;margin-top: 30px;border: 1px solid #a89791; ">
+                <div style="margin-left: 30px;"><img src="img/ej.jpg"></div>
+                <div style="margin-left: 10px; font-size: 10px;color: #9a9791;">400-085-0505</div>
+            </div>
+            <div  style="width:87px;height: 41px; float: left;margin-top: 30px;border: 1px solid #a89791; ">
+                <div style="margin-left: 30px;"><img src="img/yx.jpg"></div>
+                <div style="margin-left: 10px; font-size: 10px;color: #9a9791;">mc@b5m.com</div>
+            </div>
+            <div  style="width:87px;height: 43px; float: left;margin-top: 30px;background-color:#ff4d04; ">
+                <div style="width:87px;height: 10px;"></div>
+                <span style="margin-left: 5px;"><img src="img/wenhao.jpg"></span>
+                <span style=" font-size: 14px;color: #ffffff;">常见问题</span>
+            </div>
+        </div>
+    </div>
+    <!-- 顶部2开始 -->
+    <div id="hei">
+    	<span class="hei1" style="background-color: #fe0d4a;margin-left: 120px;"><a class="hei1z" href="">首页</a></span>
+    	<span class="hei1"><a class="hei1z" href="">热门品牌</a></span>
+    	<span class="hei1"><a class="hei1z" href="">美妆个户</a></span>
+    	<span class="hei1"><a class="hei1z" href="">服饰鞋包</a></span>
+    	<span class="hei1"><a class="hei1z" href="">母婴生活</a></span>
+    	<span class="hei1"><a class="hei1z" href="">食品保健</a></span>
+    	<span class="hei1"><a class="hei1z" href="">韩国直邮</a></span>
+    	<span class="hei1"><a class="hei1z" href="">跨境购</a></span>
+    	<span class="hei1"><img src="img/ff_03.jpg"></span>
+    </div>
+	</div>
+    <!-- 中部开始 -->
+    <div id="zhong">
+    	<div class="zhong1"><span class="zhong1z">首页>美容护肤/美体/精油>防晒>韩国 RE;CIPE 水晶清爽防晒水防晒喷雾SPF5 150ml/瓶</span></div>
+    	<!-- 中部中上开始 -->
+    	<div class="zhong2">
+    		<div id="zhong21">
+    			<!-- 中部大图开始 -->
+    			<div id="zhong23">
+    				<div id="img1">
+    					<img id="datu" src="img/pp0.jpeg">
+                        <div id="slider"></div>
+    				</div>
+                    <div style="width: 423px; height: 128px;margin-top: 412px;">
+                        <span>
+                            <img id="zanniu" src="img/spanl.jpg">
+                        </span>
+                        <span>
+                            <img id="sp0" style="height: 59px; border-color:#ff4d04;border-style: solid;border-width: 1px;" src="img/sp0.jpeg">
+                        </span>
+                        <span>
+                            <img id="sp1" style="height: 59px; border-color:#ff4d04;border-style: solid;border-width: 0px;" src="img/sp1.jpeg">
+                        </span>
+                        <span style="margin-left: 220px;">
+                            <img id="yanniu" src="img/spanr.jpg">
+                        </span>
+                    </div>
+    			</div>
+                <script type="text/javascript">
+                    var z=document.getElementById("zanniu");
+                    var y=document.getElementById("yanniu");
+                    var i=document.getElementById("datu");
+                    var sp0=document.getElementById("sp0");
+                    var sp1=document.getElementById("sp1");
+                    var Bimg = document.getElementById("Bimg");
+                    z.onclick = function () {
+                        i.src="img/pp0.jpeg";
+                        sp1.style.borderWidth=0+"px";
+                        sp0.style.borderWidth=1+"px";
+                        Bimg.src="img/pp0.jpeg";
+                    }
+                    y.onclick=function(){
+                        i.src="img/pp1.jpeg";
+                        sp0.style.borderWidth=0+"px";
+                        sp1.style.borderWidth=1+"px";
+                        Bimg.src="img/pp1.jpeg";
+                    }
+                    sp0.onmouseover=function(){
+                        i.src="img/pp0.jpeg";
+                        sp1.style.borderWidth=0+"px";
+                        sp0.style.borderWidth=1+"px";
+                        Bimg.src="img/pp0.jpeg";
+                    }
+                    sp1.onmouseover=function(){
+                        i.src="img/pp1.jpeg";
+                        sp0.style.borderWidth=0+"px";
+                        sp1.style.borderWidth=1+"px";
+                        Bimg.src="img/pp1.jpeg";
+                    }
+                </script>
+                <div id="img2"  style="background-color: #ffffff; z-index: 1; margin-right: 172px;margin-top: 0px;">
+                        <img  src="img/pp0.jpeg" id="Bimg" />
+                </div>
+                    <script>
+                        var img1 = document.getElementById("img1");
+                        var img2 = document.getElementById("img2");
+                        var slider = document.getElementById("slider");
+                        var Bimg = document.getElementById("Bimg");
+                        var box = document.getElementById('zhong21');
+                        img1.onmouseover = function(){
+                            slider.style.display = 'block';
+                            img2.style.display = 'block';
+                        }
+                        img1.onmouseout = function () {
+                            slider.style.display = 'none';
+                            img2.style.display = 'none';
+                        }
+                        img1.onmousemove = function (ev) {
+                            var ev = ev || window.event;
+                            var oL = ev.clientX - box.offsetLeft- slider.offsetWidth / 2;
+                            var oT = ev.clientY - box.offsetTop - slider.offsetHeight / 2;
+                            var oMaxw = img1.offsetWidth - slider.offsetWidth;
+                            var oMaxh = img1.offsetHeight - slider.offsetHeight;
+                            oL = oL > oMaxw ? oMaxw : oL < 0 ? 0 : oL;
+                            oT = oT > oMaxh ? oMaxh : oT < 0 ? 0 : oT;
+                            slider.style.left = oL + 'px';
+                            slider.style.top = oT + 'px';
+                            var scale = img1.offsetWidth / slider.offsetWidth;
+                            Bimg.style.left = -scale * oL +'px';
+                            Bimg.style.top = -scale * oT +'px';
+                        }   
+                    </script>
+    			<!-- 中部右边开始 -->
+    			<div class="zhong24">
+    				<div style="margin-top: 5px; font-size: 18px; color: #000000;">韩国 RE : CIPE 水晶清爽防晒水防晒喷雾SPF5 150ml/瓶</div>
+    				<div class="zhong24z">【限购3件】 超透明无痕防晒，防水防汗定妆，保温降温不黏腻。水晶防晒喷雾，喷后皮肤水润，不油不留白，更不会像防晒霜那样抹不开，非常实用，开始存货吧。</div>
+    				<div style="margin-top: 25px;margin-left: 32px;">
+    					<span style="font-size: 13px;">价格</span>
+    					<span style="font-size: 18px;margin-left: 88px;color: 
+    					#fe6c00;">￥71</span>
+    					<span style="font-size: 13px;margin-left: 35px;text-decoration:line-through;">￥150</span> 
+    				</div>
+    				<div style="margin-left: 15px;margin-top: 13px;">
+    					<img src="img/ss_09.jpg">
+    				</div>
+    				<div style="width: 492px;height: 50px; margin-left: 28px;margin-top: 8px;">
+    					<div class="zhong24z2">化妆品净含量</div>
+    					<div id="150ml" class="zhong24z2" style="width: 58px;height: 28px; margin-left: 38px;">150ml</div>
+    					<div id="200ml" class="zhong24z2" style="margin-left: 38px;width: 58px;height: 28px;">200ml</div>
+    				</div>
+    				<div style="width: 492px;height: 141px;">
+    					<div style="width: 492px;height: 35px; margin-left: 28px;">
+    						<span class="zhong24z2">数量</span>
+                            <div id="jian" style="width: 26px; height:29px;border: 1px solid #676660;margin-left: 50px; float: left;text-align: center;cursor: pointer;">-</div>
+                            <input  type="text" name="" id="in1" value="0" style="width: 59px; height:27px;float: left; text-align: center;">
+                            <div id="jia" style="width: 26px; height:29px;border: 1px solid #676660;float: left;text-align: center;cursor: pointer; ">+</div>
+                            <span class="zhong24z2" style="margin-left: 5px;margin-top: 5px;">（库存5件）</span>
+                            <script type="text/javascript">
+                                var jian=document.getElementById("jian");
+                                var jia=document.getElementById("jia");
+                                var in1=document.getElementById("in1");
+                                var s=in1.getAttribute("value");
+                                jian.onclick=function(){
+                                    if(s>0){
+                                        s--;
+                                        in1.value=s;
+                                        
+                                    }
+                                }
+                                jian.onmouseover=function(){
+                                    if(s==0){
+                                        jian.style.cursor="not-allowed";
+                                    }
+                                    if(s>0){
+                                        jian.style.cursor="pointer";
+                                    }
+                                }
+                                jia.onclick=function(){
+                                    if(s<5){
+                                        s++;
+                                        in1.value=s;
+                                    }
+                                    
+                                }
+                                jia.onmouseover=function(){
+                                    if(s==5){
+                                        jia.style.cursor="not-allowed";
+                                    }
+                                    if(s<5){
+                                        jia.style.cursor="pointer";
+                                    }
+                                }
+                            </script>
+    					</div>
+    					<div style="width: 492px;height: 35px;">
+                            <img src="img/oo_03.jpg">
+    					</div>
+                        <div id="aml" style="height: 35px;width: 192px;margin-left: 128px;margin-top: 10px;display: none;">
+                            <span style="font-size: 13px;">您已选择：</span>
+                            <span style="font-size: 15px;color: #ff4d04;">“150ml”</span>
+                        </div>
+                         <div id="aml2" style="height: 35px;width: 192px;margin-left: 128px;margin-top: 10px;display: none;">
+                            <span style="font-size: 13px;">您已选择：</span>
+                            <span style="font-size: 15px;color: #ff4d04;">“200ml”</span>
+                        </div>
+    				</div>
+                    <script type="text/javascript">
+                            var ml1=document.getElementById("150ml");
+                            var ml2=document.getElementById("200ml");
+                            var aml =document.getElementById("aml");
+                            var am2 =document.getElementById("aml2");
+                            ml1.onclick=function(){
+                                ml1.style.backgroundImage="url(img/duigou.png)";
+                                ml1.style.borderWidth=1+"px";
+                                ml1.style.borderStyle="solid"; 
+                                ml1.style.borderColor="#ff0754";
+                                ml1.style.backgroundRepeat="no-repeat";
+                                ml1.style.backgroundPosition="100% 100%";
+                                ml2.style.backgroundImage="";
+                                ml2.style.borderWidth="";
+                                ml2.style.borderStyle=""; 
+                                ml2.style.borderColor="";
+                                ml2.style.backgroundRepeat="";
+                                ml2.style.backgroundPosition="";
+                                aml.style.display="block";
+                                am2.style.display="none";
+                            
+                            };
+                            ml2.onclick=function(){
+                                ml2.style.backgroundImage="url(img/duigou.png)";
+                                ml2.style.borderWidth=1+"px";
+                                ml2.style.borderStyle="solid"; 
+                                ml2.style.borderColor="#ff0754";
+                                ml2.style.backgroundRepeat="no-repeat";
+                                ml2.style.backgroundPosition="100% 100%";
+                                ml1.style.backgroundImage="";
+                                ml1.style.borderWidth="";
+                                ml1.style.borderStyle=""; 
+                                ml1.style.borderColor="";
+                                ml1.style.backgroundRepeat="";
+                                ml1.style.backgroundPosition="";
+                                aml.style.display="none";
+                                am2.style.display="block";
+
+                            };
+                        </script>
+    				<div style="width: 492px;height: 114px;float: left;">
+                        <div style="width: 150px;height: 38px;float: left;margin-left: 25px;"><button style="font-size: 18px; border:1px solid #ff0754; background-color:#ffffff;color: #ff0754;width: 150px;height: 38px;">立即购买</button></div>
+                        <div style="width: 150px;height: 38px;float: left;margin-left: 25px;"><button id="bt3" style=" background-color:#ff0754; border:1px solid #ff0754; font-size: 18px; width: 150px;height: 38px;color: #ffffff;">加入购物车</button></div>
+                    </div>
+    			</div>
+    		</div>
+    		<!-- 中部最右侧开始 -->
+    		<div class="zhong22">
+    			<img src="img/ww_07.jpg">
+    		</div>
+    	</div>
+    	<!-- 中部底部开始 -->
+    	<div class="zhong3">
+    		<img src="img/a_07.jpg">
+    	</div>
+    </div>
+	<!-- 底部开始 -->
+    <div id="dibu">
+        <div class="di1">
+            <div><img src="img/lo.jpg"></div>
+        </div>
+        <div class="di2">
+            <div style="float: left;">
+                <div style="margin-top: 32px;margin-left: 65px;">购买指南</div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">如何下单</a></div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">帮5购流程</a></div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">订单查询</a></div>
+               <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">物流配送</a></div>
+            </div>
+            <div style="float: left;">
+                <div style="margin-top: 32px;margin-left: 65px;">支付相关</div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">支付方式</a></div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">安全设置</a></div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">账户信息</a></div>
+            </div>
+            <div style="float: left;">
+                <div style="margin-top: 32px;margin-left: 65px;">售后服务</div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">取消订单</a></div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">申请售后</a></div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">退货流程</a></div>
+               <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">退款相关</a></div>
+            </div>
+            <div style="float: left;">
+                <div style="margin-top: 32px;margin-left: 65px;">VIP服务</div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">VIP优惠</a></div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">如何成为VIP</a></div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">超级帮钻</a></div>
+            </div>
+            <div style="float: left;">
+                <div style="margin-top: 32px;margin-left: 65px;">帮韩品</div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">韩国正品</a></div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">闪电发货</a></div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">帮韩品售后</a></div>
+            </div>
+            <div style="float: left;">
+                <div style="margin-top: 32px;margin-left: 65px;">更多</div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">手机APP</a></div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">帮5采APP</a></div>
+                <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">帮5淘插件</a></div>
+               <div style="font-size:12px;  margin-top: 12px;margin-left: 65px"><a style="color:#666560;" href="">其他</a></div>
+            </div>
+            <div>
+                <img style="margin-left: 77px;margin-top: 22px;" src="img/er.jpg">
+            </div>
+        </div>
+        <div class="di3">
+            <div style="margin-left: 255px;width: 700px;height: 25px;"><!-- 底部小字体 -->
+                <div class="header2s1"><a href=""style="color: #74736d;font-size: 10px;">关于帮5买</a></div> 
+                <div class="header2s1"><a  href="" style="color: #74736d;margin-left: 8px; font-size: 10px;">联系我们</a></div> 
+                <div class="header2s1"><a href=""style="color: #74736d;font-size: 10px;margin-left: 10px;">合作商家</a></div> 
+                <div class="header2s1"><a href=""style="color: #74736d;font-size: 10px;margin-left: 6px;">友情链接</a></div> 
+                <div class="header2s1"><a href=""style="color: #74736d;font-size: 10px;margin-left: 4px;">加入我们</a></div>
+                <div class="header2s1"><a href=""style="color: #74736d;font-size: 10px;margin-left: 4px;">移动应用</a></div> 
+                <div class="header2s1"><a href=""style="color: #74736d;font-size: 10px;margin-left: 25px;">热门</a></div> 
+                <div class="header2s1"><a href=""style="color: #74736d;font-size: 10px;margin-left: 14px;">广告联盟</a></div> 
+                <div class="header2s1"><a href=""style="color: #74736d;font-size: 10px;margin-left: 10px;">使用条款</a></div>  
+            </div>
+            <div style="width: 700px;height: 10px;"></div>
+            <div style="margin-left: 375px;width: 700px;height: 21px;color:#9a9791;font-size: 10px; ">
+                Copyrigh @  2011-2015 B5M.COM.All rights reserved .Powered by B5Msoft Co.Ltd.
+            </div>
+            <div style="margin-left: 80px;width: 1000px;height: 21px;color:#9a9791;font-size: 10px; ">
+                增值电信经营许可证：沪B2-20130065号|中华人民共和国互联网药品信息服务资格证书（沪）-非经营性-2013-0034 沪卫（中医）网审【2015】 10032号 沪ICP备11034776号-3|食品流通许可证：
+            </div>
+            <div style="margin-left: 520px;width: 700px;color:#9a9791;font-size: 10px; height: 1px;">
+                SP3101151410301755
+            </div>
+            <div style="width: 750px;height: 25px;"></div>
+            <div style="margin-left: 205px;">
+                <img src="img/bo1.gif">
+                <img src="img/bo2.png">
+                <img src="img/bo3.gif">
+                <img src="img/bo4.png">
+                <img src="img/bo5.png">
+                <img src="img/bo6.png">
+                <img src="img/bo7.png">
+            </div>
+        </div>
+        </div>
+        <script type="text/javascript">
+            var bt1=document.getElementById("bt1");
+            var bt2=document.getElementById("bt2");
+            var bt3=document.getElementById("bt3");
+            var meng=document.getElementById("mengban");
+            var tan=document.getElementById("tan");
+            console.log(bt3);
+            bt3.onclick=function(){
+                meng.style.opacity=0.4;
+                tan.style.display="block";
+
+            }
+            bt2.onclick=function(){
+                meng.style.opacity=1;
+                tan.style.display="none";
+
+            }
+            bt1.onclick=function(){
+                meng.style.opacity=1;
+                tan.style.display="none";
+
+            }
+        </script>
+</body>
+</html>
